@@ -1,8 +1,3 @@
-# cquitra3.github.io
-Cquitra's Personal Blog
-
-You can test this Repo on [cquitra.js.cool](https://cquitra.js.cool)
-
-Repo initialization completed! You can import your file for the next editing step! Wish you happy.
-
-By **MC-Sep**
+# cquitra博客  
+这是cquitra的博客！访问地址：https://cquitra.js.cool  
+当前版本：V2.0.1
