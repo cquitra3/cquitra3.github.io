@@ -144,7 +144,7 @@ initTheme()</script><!-- global head--><script>const GLOBAL_CONFIG = {
     right_menu: {"mode":{"dark":"深色模式","light":"浅色模式"},"img_error":"对不起，此图片无法复制与下载","music":{"start":"播放音乐","stop":"暂停音乐"},"barrage":{"open":"显示热评","close":"关闭热评"},"translate":true,"ctrlOriginalMenu":"提示：按住Ctrl+右键可打开浏览器右键菜单"},
     translate: {"translateDelay":0,"defaultEncoding":2},
     lure: {"jump":"cquitra博客 | 正在后台运行...","back":"cquitra博客 | 欢迎回来！"},
-    expire: {"time":30,"position":"top","text_prev":"注意 | 这篇文章已经发布","text_next":"天，若发现图片与文字不符实际请联系管理员。"},
+    expire: {"time":30,"position":"top","text_prev":"注意 | 这篇文章已经在","text_next":"天前过期，若发现图片与文字不符实际请联系管理员。"},
 };</script><!-- page-config head--><script id="config-diff">var PAGE_CONFIG = {
     is_post: false,
     is_page: true,
@@ -503,7 +503,7 @@ document.addEventListener('pjax:error', (e) => {
     }
 })</script><!-- google adsense--><!-- search--><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">全站搜索</span><button class="search-close-button"><i class="solitude fas fa-xmark"></i></button></nav><div class="search-wrap"><div class="search-box"><input class="search-box-input" id="search-input" type="text" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="搜索功能尚未完善，发现问题请联系管理员"></div><div id="search-results"><div id="search-hits"></div></div><div id="search-pagination"></div><div id="search-tips"></div></div></div><div id="search-mask"></div></div><script src="/js/search/local.js?v=3.0.19"></script><!-- music--><div class="needEndHide" id="nav-music"><div id="nav-music-hoverTips"><i class="music-control-btn fas fa-backward-step" id="music-prev" onclick="sco.musicSkipBack()"></i><i class="music-control-btn fas fa-pause" id="music-pause" onclick="sco.musicToggle()"></i><i class="music-control-btn fas fa-play" id="music-play" onclick="sco.musicToggle()"></i><i class="music-control-btn fas fa-forward-step" id="music-next" onclick="sco.musicSkipForward()"></i></div><meting-js id="13908245149" server="netease" type="playlist" mutex="true" preload="none" theme="var(--efu-main)" data-lrctype="0" order="random" volume="0.8"></meting-js></div></body></html>
         <script>
-            const posts = ["2024/10/27/Unity3Djiaocheng1.1/","2025/07/26/c++studyjingsai-01/","2025/07/10/c++studyjingsai-preface/","2025/04/05/math-teaching-1.1/","2025/07/09/math-teaching-1.2/","2025/03/15/math-teaching-preface/","2025/05/03/windows10vs11/","2025/06/06/xiaozhishi-bilibilishipingxiazai/","2025/07/10/wulinandian/","2025/08/07/githubjiasuqi/"];
+            const posts = ["2025/08/07/githubjiasuqi/","2025/07/26/c++studyjingsai-01/","2025/07/10/c++studyjingsai-preface/","2025/07/10/wulinandian/","2025/07/09/math-teaching-1.2/","2025/06/06/xiaozhishi-bilibilishipingxiazai/","2025/05/03/windows10vs11/","2025/04/05/math-teaching-1.1/","2025/03/15/math-teaching-preface/","2024/10/27/Unity3Djiaocheng1.1/"];
             function toRandomPost() {
                 const randomPost = posts[Math.floor(Math.random() * posts.length)];
                 pjax.loadUrl(GLOBAL_CONFIG.root + randomPost);
