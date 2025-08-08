@@ -85,18 +85,6 @@ div.timenode:hover .meta:after {
   background: var(--efu-theme-op);
   transform: scale(1);
 }
-.keyboard-tag {
-  border: 1px solid var(--efu-secondbg);
-  font-size: 0.7em;
-  box-shadow: 1px 0 1px 0 #eee, 0 2px 0 2px #ccc, 0 2px 0 3px #444;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  margin: 2px 3px;
-  padding: 1px 5px;
-  position: relative;
-  top: -1.5px;
-}
 .red {
   color: var(--efu-red);
 }
@@ -1853,7 +1841,7 @@ body {
   background: var(--efu-background);
   color: var(--efu-fontcolor);
   font-size: 16px;
-  font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+  font-family: Yozai Medium;
   line-height: 2;
   -webkit-tap-highlight-color: transparent;
   margin: 0;
@@ -1949,7 +1937,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: "monospace", monospace;
+  font-family: Yozai Medium, "monospace", monospace;
   font-size: 16px;
 }
 small {
@@ -6264,7 +6252,7 @@ span.tagsPageCount {
   padding: 0.5rem;
   text-align: center;
   font-size: 14px;
-  font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+  font-family: Yozai Medium;
 }
 @media screen and (max-width: 768px) {
   #body-wrap.error #error-wrap .error-content .error-info {
@@ -8129,7 +8117,7 @@ body[data-type=music] #nav-music {
   margin-right: auto;
   width: 100%;
   font-size: 36px;
-  font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+  font-family: Yozai Medium;
   line-height: 1.06;
   letter-spacing: -0.02em;
   color: var(--efu-fontcolor);
