@@ -1,3 +1,3 @@
 # cquitra博客  
-这是cquitra的博客！访问地址：https://cquitra.js.cool  
-当前版本：V2.1.1
+这里是cquitra的博客！  
+在这里，你可以阅读到各种各样的文章，
