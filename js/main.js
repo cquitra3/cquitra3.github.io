@@ -203,7 +203,7 @@ const sco = {
     const $music = document.querySelector("#nav-music meting-js");
     if ($music && $music.aplayer) { 
       this.isMusicBind = true;
-      $music.onclick = () => this.musicPlaying && this.musicToggle(false);
+      $music.onclick = () => this.musicPlaying && this.musicToggle(true);
       $music.aplayer.on('loadeddata', () =>{
         coverColor(true);
       })
@@ -213,7 +213,7 @@ const sco = {
     if (!this.isMusicBind) this.musicBind();
     
     const $music = document.querySelector("#nav-music");
-    const $meting = document.querySelector("meting-js");
+    const $meting = document.querySelector("#nav-music meting-js");
     const $console = document.getElementById("consoleMusic");
     
     this.musicPlaying = !this.musicPlaying;
@@ -281,12 +281,21 @@ const sco = {
     );
   },
   changeWittyWord() {
-    const greetings = GLOBAL_CONFIG.aside.witty_words;
+    const greetings = GLOBAL_CONFIG.aside.witty_words || [];
+    if (greetings.length === 0) {
+      document.getElementById("sayhi").textContent = "Solitude";
+      this.lastWittyWord = null;
+      return;
+    }
     const greetingElement = document.getElementById("sayhi");
     let randomGreeting;
-    do {
-      randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
-    } while (randomGreeting === this.lastWittyWord);
+    if (greetings.length === 1) {
+      randomGreeting = greetings[0];
+    } else {
+      do {
+        randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+      } while (randomGreeting === this.lastWittyWord);
+    }
     greetingElement.textContent = randomGreeting;
     this.lastWittyWord = randomGreeting;
   },
@@ -611,14 +620,6 @@ const sco = {
     });
     ty.go();
   },
-  switchHideBgImg(){
-    const globalBg = document.getElementById('global_bg');
-    if (globalBg.style.backgroundImage === 'none') {
-      globalBg.style.backgroundImage = '';
-    } else {
-      globalBg.style.backgroundImage = 'none';
-    }
-  }
 };
 
 const addHighlight = () => {
