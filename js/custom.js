@@ -320,3 +320,4 @@ return;
    }
    document.addEventListener("pjax:complete", handlePjaxComplete);
    }
+
